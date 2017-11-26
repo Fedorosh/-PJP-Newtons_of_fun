@@ -1,13 +1,14 @@
 #include <iostream>
 #include <glew.h>
 #include <freeglut.h>
+#include <wglew.h>
 using namespace std;
 
 void renderScene(void)
 {
 
 	glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
-	glClearColor(1.0, 0.0, 0.0, 1.0);//clear red
+	glClearColor(1.0, 1.0, 1.0, 0.0);//clear red
 
 	glutSwapBuffers();
 }
@@ -21,7 +22,7 @@ int main(int argc, char **argv)
 	glutCreateWindow("Dzia³a kuurrwa");
 
 	glewInit();
-	if (glewIsSupported("GL_VERSION_6_14"))
+	if (glewIsSupported("GL_VERSION_1_4"))
 	{
 		cout << "wspiera";
 	}
