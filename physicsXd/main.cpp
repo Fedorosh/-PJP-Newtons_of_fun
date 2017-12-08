@@ -4,7 +4,7 @@ using namespace std;
 using namespace Core;
 
 GLuint program;
-
+//unreal
 void renderScene(void)
 {
 
@@ -34,7 +34,7 @@ int main(int argc, char **argv)
 	glutInitDisplayMode(GLUT_DEPTH | GLUT_DOUBLE | GLUT_RGBA);
 	glutInitWindowPosition(100, 100);
 	glutInitWindowSize(800, 600); 
-	glutCreateWindow("Dzia³a kuurrwa");
+	glutCreateWindow("DziaÂ³a kuurrwa");
 	glewInit();
 
 	Init();
